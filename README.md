@@ -17,12 +17,13 @@ In order to access to applications with their aliases, you would need to create 
 ## Phase 1
 
 1. git switch initial-setup
-2. Execute `docker compose up -d`
-3. Execute `docker logs jenkins` and grab the initial password to access Jenkins UI
-4. Go to http://jenkins.demo.local:8080 on the web browser of your host computer.
-5. Once you have access, you have two options
+2. Execute docker build -t jenkinsd:latest .
+3. Execute `docker compose up -d`
+4. Execute `docker logs jenkins` and grab the initial password to access Jenkins UI
+5. Go to http://jenkins.demo.local:8080 on the web browser of your host computer.
+6. Once you have access, you have two options
     a. Select plugins to install (Recommended). Check what you want to test, and just install necessary pluggins.
     b. Install suggested plugins. Jenkins will install default pluggins to start play with.
-6. Create your Admin credentials
-7. Define Jenkins URL as http://jenkins.demo.local:8080/
+7. Create your Admin credentials
+8. Define Jenkins URL as http://jenkins.demo.local:8080/
 
