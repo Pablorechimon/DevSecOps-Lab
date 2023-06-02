@@ -27,3 +27,9 @@ In order to access to applications with their aliases, you would need to create 
 7. Create your Admin credentials
 8. Define Jenkins URL as http://jenkins.demo.local:8080/
 
+## Phase 2 
+
+1. git switch sast-setup
+2. Execute `docker compose up -d`
+4. Install "SonarQube Scanner" plugin on jenkins
+3. Connecto to http://sonarqube.demo.local:9000 and login with default credentials "admin:admin"
